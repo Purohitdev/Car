@@ -8,7 +8,6 @@ import {
   ShieldCheck,
   Sparkles,
   CircleDashed,
-  ArrowRight,
 } from "lucide-react";
 
 const services = [
