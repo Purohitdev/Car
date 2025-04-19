@@ -20,7 +20,6 @@ const Nav: React.FC = () => {
               "faq",
               "testimonials",
               "contact",
-              "blog",
             ].map((section) => (
               <a
                 key={section}
