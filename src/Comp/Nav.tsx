@@ -9,7 +9,7 @@ const Nav: React.FC = () => {
         <div className="flex items-center gap-6">
           <a href="/" className="flex items-center gap-2">
             <Car className="h-6 w-6 text-red-600" />
-            <span className="text-xl font-bold">CarRental</span>
+            <span className="text-xl font-bold">Mechanique</span>
           </a>
           <nav className="hidden md:flex gap-6">
             {[

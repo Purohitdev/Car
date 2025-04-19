@@ -1,58 +1,3 @@
-
-// import React from "react";
-
-// const Hero: React.FC = () => {
-//   return (
-//     <section id="home" className="relative bg-gray-900 text-white">
-//       {/* Background Image */}
-//       <div className="absolute inset-0 z-0 opacity-50 bg-gray-800">
-//         <img
-//           src="https://i.pinimg.com/736x/1c/ba/38/1cba385973e8c92e544865751b5c5bb3.jpg"
-//           alt="Car background"
-//           className="w-full h-full object-cover"
-//         />
-//       </div>
-
-//       {/* Content */}
-//       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-//         <div className="grid gap-8 md:grid-cols-2 items-center">
-//           {/* Text Section */}
-//           <div className="space-y-6">
-//             <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
-//               Find Your Perfect <span className="text-red-600">Rental Car</span> Today
-//             </h1>
-//             <p className="text-lg md:text-xl text-gray-300 max-w-md">
-//               Experience the freedom of the road with our premium car rental service.
-//               Affordable rates, flexible options.
-//             </p>
-//             <div className="flex flex-col sm:flex-row gap-4">
-//               <button className="bg-red-600 hover:bg-red-700 text-white font-medium px-6 h-12 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-//                 Book Now
-//               </button>
-//               <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-medium px-6 h-12 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-//                 Learn More
-//               </button>
-//             </div>
-//           </div>
-
-//           {/* Featured Car Image */}
-//           {/* <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-lg">
-//             <img
-//               src="https://i.pinimg.com/736x/49/dd/88/49dd884d13d9f5208c3c53b196b256fe.jpg"
-//               alt="Featured car"
-//               className="w-full h-full object-cover mix-blend-color"
-//             />
-//           </div> */}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
-
-
 import React, { useEffect, useState } from "react";
 
 const backgroundImages = [
@@ -86,7 +31,7 @@ const Hero: React.FC = () => {
             }`}
           />
         ))}
-        <div className="absolute inset-0 bg-black opacity-50 z-10" />
+        <div className="absolute inset-0 bg-black opacity-60 z-10" />
       </div>
 
       {/* Content */}
@@ -95,18 +40,17 @@ const Hero: React.FC = () => {
           {/* Text Section */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
-              Find Your Perfect <span className="text-red-600">Rental Car</span> Today
+              Your Trusted <span className="text-red-600">Auto Repair</span> & Service Garage
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-md">
-              Experience the freedom of the road with our premium car rental service.
-              Affordable rates, flexible options.
+              We keep your car running like new. From oil changes to engine repair — fast, affordable, and reliable.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-red-600 hover:bg-red-700 text-white font-medium px-6 h-12 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Book Now
+                Book Service
               </button>
               <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-medium px-6 h-12 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Learn More
+                Explore Services
               </button>
             </div>
           </div>

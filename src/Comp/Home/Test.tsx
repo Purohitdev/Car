@@ -3,34 +3,34 @@ import Marquee from "react-fast-marquee";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    location: "New York",
+    name: "Rahul Mehra",
+    location: "Jaipur",
     quote:
-      "The service was exceptional! The car was clean, well-maintained, and the pickup process was quick and easy. Will definitely use again.",
+      "Mechanique fixed my car’s AC and did a full service in just a day. Super professional and honest pricing. Highly recommend!",
   },
   {
-    name: "Michael Chen",
-    location: "Los Angeles",
+    name: "Sneha Verma",
+    location: "Delhi",
     quote:
-      "I've rented from many companies, but CarRental stands out for their customer service and quality vehicles. Highly recommended!",
+      "Had a major engine issue. These guys diagnosed and fixed it faster than expected. Mechanique is now my go-to garage.",
   },
   {
-    name: "Emily Rodriguez",
-    location: "Chicago",
+    name: "Amit Thakur",
+    location: "Mumbai",
     quote:
-      "The online booking process was seamless, and the staff was friendly and professional. The car was perfect for our family vacation.",
+      "Loved the pickup and drop service! My car feels brand new after the detailing and service package.",
   },
   {
-    name: "Liam Patel",
-    location: "San Francisco",
+    name: "Priya Shah",
+    location: "Ahmedabad",
     quote:
-      "Excellent experience! The car ran perfectly, and the return process was smooth and hassle-free. Five stars!",
+      "Transparent process, quick turnaround, and genuine parts. Feels good to finally trust a garage.",
   },
   {
-    name: "Ava Thompson",
-    location: "Miami",
+    name: "Zaid Khan",
+    location: "Lucknow",
     quote:
-      "We were in a rush and the team helped us get on the road in minutes. Incredible efficiency and service!",
+      "Excellent service! Got my suspension fixed and brake pads replaced. Smooth experience from start to finish.",
   },
 ];
 
@@ -41,16 +41,16 @@ const TestimonialsSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Customer <span className="text-red-600">Testimonials</span>
+            What Our <span className="text-red-600">Customers Say</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            See what our satisfied customers have to say about their experience with us.
+            Real stories from real people. Here's how Mechanique helped them stay on the road.
           </p>
         </div>
 
         {/* Marquee Testimonials */}
         <Marquee pauseOnHover speed={50} gradient={false}>
-          <div className="flex gap-8 px-4 ">
+          <div className="flex gap-8 px-4">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}

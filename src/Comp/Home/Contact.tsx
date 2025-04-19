@@ -1,7 +1,7 @@
 import React from 'react';
-import { MapPin, Phone, Clock } from 'lucide-react';  // Importing Lucide icons
+import { MapPin, Phone, Clock } from 'lucide-react';  // Lucide icons
 
-// Component for Contact Details (Location, Phone, Working Hours)
+// Contact Info Item Component
 const ContactDetail = ({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) => (
   <div className="flex items-start gap-4">
     <div className="h-10 w-10 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -14,7 +14,7 @@ const ContactDetail = ({ icon, title, children }: { icon: React.ReactNode; title
   </div>
 );
 
-// Component for the contact form
+// Contact Form
 const ContactForm = () => (
   <div className="border-none shadow-lg rounded-lg">
     <div className="p-6">
@@ -72,7 +72,7 @@ const ContactForm = () => (
   </div>
 );
 
-// Main Contact Section Component
+// Contact Section for Mechanique
 const ContactSection = () => (
   <section id="contact" className="py-20 bg-white">
     <div className="container mx-auto px-4">
@@ -82,19 +82,19 @@ const ContactSection = () => (
             Get in <span className="text-red-600">Touch</span>
           </h2>
           <p className="text-gray-600 mb-8">
-            Have questions or need assistance? Contact our friendly team for help with bookings, inquiries, or feedback.
+            Need help with a car issue, want to schedule a service, or just have a question? Reach out to our expert team at Mechanique.
           </p>
           <div className="space-y-6">
-            <ContactDetail icon={<MapPin className="h-5 w-5 text-red-600" />} title="Our Location">
-              123 Rental Street, Car City, CC 12345
+            <ContactDetail icon={<MapPin className="h-5 w-5 text-red-600" />} title="Our Garage">
+              17/8 Sector 10, Near Vishwakarma Market, Jaipur, Rajasthan
             </ContactDetail>
-            <ContactDetail icon={<Phone className="h-5 w-5 text-red-600" />} title="Phone Number">
-              +1 (555) 123-4567
+            <ContactDetail icon={<Phone className="h-5 w-5 text-red-600" />} title="Call Us">
+              +91 98765 43210
             </ContactDetail>
-            <ContactDetail icon={<Clock className="h-5 w-5 text-red-600" />} title="Working Hours">
-              Monday - Friday: 8am - 8pm
+            <ContactDetail icon={<Clock className="h-5 w-5 text-red-600" />} title="Garage Hours">
+              Mon - Fri: 9:00 AM – 7:00 PM
               <br />
-              Saturday - Sunday: 9am - 6pm
+              Sat - Sun: 10:00 AM – 5:00 PM
             </ContactDetail>
           </div>
         </div>

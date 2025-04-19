@@ -1,26 +1,26 @@
 // components/Service.tsx
-import { Car, Users, MapPin, ArrowRight } from "lucide-react";
+import { Wrench, ShieldCheck, SprayCan, ArrowRight } from "lucide-react";
 
 const services = [
   {
-    icon: <Car className="h-6 w-6 text-red-600" />,
-    title: "Car Rental",
+    icon: <Wrench className="h-6 w-6 text-red-600" />,
+    title: "General Repairs",
     description:
-      "Choose from our wide selection of vehicles for your daily, weekly, or monthly rental needs.",
+      "From engine issues to brake repairs, we handle all major and minor mechanical problems.",
     link: "#",
   },
   {
-    icon: <Users className="h-6 w-6 text-red-600" />,
-    title: "Corporate Rentals",
+    icon: <ShieldCheck className="h-6 w-6 text-red-600" />,
+    title: "Vehicle Diagnostics",
     description:
-      "Special rates and services for businesses, with dedicated account management and flexible billing.",
+      "Advanced diagnostic tools to quickly identify and fix electronic or performance-related issues.",
     link: "#",
   },
   {
-    icon: <MapPin className="h-6 w-6 text-red-600" />,
-    title: "Airport Transfers",
+    icon: <SprayCan className="h-6 w-6 text-red-600" />,
+    title: "Custom Paint & Detailing",
     description:
-      "Convenient pickup and drop-off services at major airports, with meet and greet options available.",
+      "Bring your car back to life with custom paint jobs, polishing, ceramic coating, and detailing services.",
     link: "#",
   },
 ];
@@ -35,8 +35,7 @@ const Service = () => {
             Our <span className="text-red-600">Services</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We offer a wide range of services to meet all your car rental needs, from short-term rentals to
-            long-term leases.
+            We offer complete workshop solutions — from mechanical repairs and diagnostics to custom detailing.
           </p>
         </div>
 

@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           {/* Brand Section */}
           <div>
             <a href="/" className="flex items-center gap-2 mb-6">
-              <span className="text-3xl font-bold text-white">CarRental</span>
+              <span className="text-3xl font-bold text-white">Mechanique</span>
             </a>
             <p className="text-gray-400 mb-6">
               Your trusted partner for car rentals. Quality vehicles and exceptional service since 2008.
