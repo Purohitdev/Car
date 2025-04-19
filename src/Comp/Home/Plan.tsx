@@ -1,0 +1,109 @@
+// // components/Plans.tsx
+// import { CheckCircle } from "lucide-react";
+
+// const goals = [
+//   {
+//     title: "Customer Satisfaction",
+//     desc: "Ensuring every customer has a seamless and enjoyable rental experience.",
+//   },
+//   {
+//     title: "Eco-Friendly Fleet",
+//     desc: "Expanding our electric and hybrid vehicle options to reduce environmental impact.",
+//   },
+//   {
+//     title: "Global Expansion",
+//     desc: "Growing our presence to serve more customers around the world.",
+//   },
+//   {
+//     title: "Digital Innovation",
+//     desc: "Leveraging technology to make car rental simpler and more convenient.",
+//   },
+// ];
+
+// const Plans = () => {
+//   return (
+//     <section id="goals" className="py-20 bg-gray-900 text-white">
+//       <div className="max-w-7xl mx-auto px-4">
+//         {/* Header */}
+//         <div className="text-center mb-12">
+//           <h2 className="text-3xl md:text-4xl font-bold mb-4">
+//             Our <span className="text-red-600">Goals</span>
+//           </h2>
+//           <p className="text-gray-300 max-w-2xl mx-auto">
+//             We're committed to providing exceptional service and contributing to a sustainable future.
+//           </p>
+//         </div>
+
+//         {/* Goals Grid */}
+//         <div className="grid md:grid-cols-4 gap-8">
+//           {goals.map((goal, index) => (
+//             <div key={index} className="text-center p-6 bg-gray-800 rounded-lg">
+//               <div className="h-16 w-16 bg-red-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
+//                 <CheckCircle className="h-8 w-8 text-red-600" />
+//               </div>
+//               <h3 className="text-xl font-bold mb-3">{goal.title}</h3>
+//               <p className="text-gray-300">{goal.desc}</p>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Plans;
+
+
+import { CheckCircle } from "lucide-react";
+
+const goals = [
+  {
+    title: "Customer Satisfaction",
+    desc: "Ensuring every customer has a seamless and enjoyable rental experience.",
+  },
+  {
+    title: "Eco-Friendly Fleet",
+    desc: "Expanding our electric and hybrid vehicle options to reduce environmental impact.",
+  },
+  {
+    title: "Global Expansion",
+    desc: "Growing our presence to serve more customers around the world.",
+  },
+  {
+    title: "Digital Innovation",
+    desc: "Leveraging technology to make car rental simpler and more convenient.",
+  },
+];
+
+const Plans = () => {
+  return (
+    <section id="goals" className="py-20 bg-gray-100 text-gray-900">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Our <span className="text-red-600">Goals</span>
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            We're committed to providing exceptional service and contributing to a sustainable future.
+          </p>
+        </div>
+
+        {/* Goals Grid */}
+        <div className="grid md:grid-cols-4 gap-8">
+          {goals.map((goal, index) => (
+            <div key={index} className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+              <div className="h-16 w-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <CheckCircle className="h-8 w-8 text-red-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-gray-800">{goal.title}</h3>
+              <p className="text-gray-600">{goal.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Plans;
