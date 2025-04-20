@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
           {/* Text Section */}
           <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
-  Your Trusted <span className="text-red-600">Car Repair</span> & Service platform
+  Your Trusted <span className="text-red-600">Car Repair</span> & Service Platform
   <span className="block text-lg md:text-2xl text-gray-300 mt-2">Open <span className="text-red-600 font-semibold">24/7</span></span>
 </h1>
 
