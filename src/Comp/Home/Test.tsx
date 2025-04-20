@@ -3,34 +3,43 @@ import Marquee from "react-fast-marquee";
 
 const testimonials = [
   {
-    name: "Rahul Mehra",
-    location: "Jaipur",
+    name: "Abhay Soni",
+    location: "Periodic Car Service",
     quote:
-      "Mechanique fixed my car’s AC and did a full service in just a day. Super professional and honest pricing. Highly recommend!",
+      "mechanique.in has become my go-to for car servicing. They picked up my car from home, did a full checkup, and returned it spotless. The whole process was smooth and super professional!",
+    img: '/Abhay.jpeg'
   },
   {
-    name: "Sneha Verma",
-    location: "Delhi",
+    name: "Surendra Gehlot",
+    location: "Brake and Suspension Repair",
     quote:
-      "Had a major engine issue. These guys diagnosed and fixed it faster than expected. Mechanique is now my go-to garage.",
+      "I had issues with my car's suspension and brakes. Team mechanique diagnosed the problem quickly and fixed everything within a day. The team is skilled and trustworthy!",
+    img: '/Surendra.jpeg'
+
   },
   {
-    name: "Amit Thakur",
-    location: "Mumbai",
+    name: "Prateek Mathur",
+    location: "Emergency Breakdown Assistance",
     quote:
-      "Loved the pickup and drop service! My car feels brand new after the detailing and service package.",
+      "My car broke down late at night, and I panicked. Team mechanique’s roadside assistance was a lifesaver. They arrived in 30 minutes and got me back on the road!",
+    img: '/Prateek.jpeg'
+
   },
   {
-    name: "Priya Shah",
-    location: "Ahmedabad",
+    name: "Hemant Verma",
+    location: "Car Detailing & Interior Cleaning",
     quote:
-      "Transparent process, quick turnaround, and genuine parts. Feels good to finally trust a garage.",
+      "The detailing service was top-notch. My 5-year-old car looks brand new! They cleaned every corner with such perfection. Highly recommend Mechanique!",
+    img: '/Hemant.jpeg'
+
   },
   {
-    name: "Zaid Khan",
-    location: "Lucknow",
+    name: "Daulat Lakhani",
+    location: "Battery Replacement & Diagnostics",
     quote:
-      "Excellent service! Got my suspension fixed and brake pads replaced. Smooth experience from start to finish.",
+      "Faced sudden battery issues during a road trip. Team Mechanique came with a new battery and installed it on the spot. Quick diagnostics and great service!",
+      img: '/Daulat.jpeg'
+
   },
 ];
 
@@ -70,12 +79,14 @@ const TestimonialsSection = () => {
                 <div className="flex items-center gap-3">
                   <div className="h-12 w-12 bg-gray-300 rounded-full overflow-hidden flex items-center justify-center text-white font-bold">
                     <img
-                      src={`/placeholder.svg?height=50&width=50&text=${testimonial.name.charAt(0)}`}
+                      src={testimonial.img}
                       alt={testimonial.name}
                       width={48}
                       height={48}
+                      className="object-cover object-top"
                     />
                   </div>
+
                   <div>
                     <h4 className="font-bold">{testimonial.name}</h4>
                     <p className="text-sm text-gray-600">{testimonial.location}</p>
