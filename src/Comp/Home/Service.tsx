@@ -60,7 +60,7 @@ const services = [
   },
   {
     icon: <ShieldCheck className="h-6 w-6 text-red-600" />,
-    title: "PDI Inspection",
+    title: "PDI ",
     description: "Pre-delivery Inspection for Used & New Cars",
   },
   {

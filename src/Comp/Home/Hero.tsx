@@ -39,9 +39,11 @@ const Hero: React.FC = () => {
         <div className="grid gap-8 md:grid-cols-2 items-center">
           {/* Text Section */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
-              Your Trusted <span className="text-red-600">Auto Repair</span> & Service Garage
-            </h1>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
+  Your Trusted <span className="text-red-600">Car Repair</span> & Service platform
+  <span className="block text-lg md:text-2xl text-gray-300 mt-2">Open <span className="text-red-600 font-semibold">24/7</span></span>
+</h1>
+
             <p className="text-lg md:text-xl text-gray-300 max-w-md">
               We keep your car running like new. From oil changes to engine repair — fast, affordable, and reliable.
             </p>
