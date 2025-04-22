@@ -1,4 +1,7 @@
 import React from "react";
+import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -7,10 +10,10 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          
+
           {/* Logo & Description */}
           <div>
-            <a href="/" className="flex items-start -mt-16 ">
+            <a href="/" className="flex items-start -mt-16">
               <img src="/logo.png" alt="Mechanique Logo" className="h-42 w-auto" />
             </a>
             <p className="text-gray-400 text-xs leading-relaxed max-w-xs">
@@ -57,42 +60,23 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-base font-semibold mb-4">Follow Us</h3>
             <div className="flex gap-4">
-              {[
-                {
-                  href: "#",
-                  label: "Facebook",
-                  color: "hover:bg-blue-600",
-                  icon: "facebook",
-                },
-                {
-                  href: "#",
-                  label: "Twitter",
-                  color: "hover:bg-sky-500",
-                  icon: "twitter",
-                },
-                {
-                  href: "#",
-                  label: "Instagram",
-                  color: "hover:bg-pink-500",
-                  icon: "instagram",
-                },
-              ].map(({ href, label, color, icon }) => (
-                <a
-                  key={label}
-                  href={href}
-                  aria-label={label}
-                  rel="noopener noreferrer"
-                  className={`h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center ${color} transition-colors`}
-                >
-                  <svg
-                    className="h-5 w-5 text-white"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <use xlinkHref={`#${icon}`} />
-                  </svg>
-                </a>
-              ))}
+              <a
+                href="https://wa.me/+918432312345"
+                aria-label="WhatsApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-500 transition-colors"
+              >
+                <FaWhatsapp className="text-white" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/mechanique.in?igsh=MXNtajk0ZmJpd3A1NA%3D%3D"
+                aria-label="Instagram"
+                className="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-500 transition-colors"
+              >
+                <FaInstagram className="text-white" />
+              </a>
             </div>
           </div>
         </div>
