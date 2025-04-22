@@ -89,7 +89,7 @@ const ContactSection = () => (
               17/8 Sector 10, Near Vishwakarma Market, Jaipur, Rajasthan
             </ContactDetail>
             <ContactDetail icon={<Phone className="h-5 w-5 text-red-600" />} title="Call Us">
-             +91 84323 12345
+             +91 8432312345
             </ContactDetail>
             <ContactDetail icon={<Clock className="h-5 w-5 text-red-600" />} title="Garage Hours">
               Mon - Fri: 9:00 AM – 7:00 PM

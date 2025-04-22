@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               <img src="/logo.png" alt="Mechanique Logo" className="h-42 w-auto" />
             </a>
             <p className="text-gray-400 text-xs leading-relaxed max-w-xs">
-              Your trusted partner for car rentals. Quality vehicles and exceptional service since 2008.
+              Your trusted partner for car rentals. Quality vehicles and exceptional service since 2015.
             </p>
           </div>
 
@@ -45,14 +45,14 @@ const Footer: React.FC = () => {
               <div>
                 Email:{" "}
                 <a
-                  href="mailto:info@carrental.com"
+                  href="mailto:hellomechanique@gmail.com "
                   className="hover:text-white transition duration-200"
                 >
-                  info@carrental.com
+                  hellomechanique@gmail.com 
                 </a>
               </div>
-              <div>Phone: +123 456 7890</div>
-              <div>123 Car Street, City, Country</div>
+              <div> Phone: 8432312345              </div>
+              <div>Jaipur, india</div>
             </address>
           </div>
 
