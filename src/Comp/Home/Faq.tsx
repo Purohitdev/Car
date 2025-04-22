@@ -90,7 +90,7 @@ const FaqSection = () => {
             Frequently Asked <span className="text-red-600">Questions</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Find answers to the most common questions about our garage services.
+            Find answers to the most common questions about our Workshop services.
           </p>
         </div>
 

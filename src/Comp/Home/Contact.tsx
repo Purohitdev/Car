@@ -85,13 +85,13 @@ const ContactSection = () => (
             Need help with a car issue, want to schedule a service, or just have a question? Reach out to our expert team at Mechanique.
           </p>
           <div className="space-y-6">
-            <ContactDetail icon={<MapPin className="h-5 w-5 text-red-600" />} title="Our Garage">
+            <ContactDetail icon={<MapPin className="h-5 w-5 text-red-600" />} title="Our Workshop">
               17/8 Sector 10, Near Vishwakarma Market, Jaipur, Rajasthan
             </ContactDetail>
             <ContactDetail icon={<Phone className="h-5 w-5 text-red-600" />} title="Call Us">
              +91 8432312345
             </ContactDetail>
-            <ContactDetail icon={<Clock className="h-5 w-5 text-red-600" />} title="Garage Hours">
+            <ContactDetail icon={<Clock className="h-5 w-5 text-red-600" />} title="Workshop Hours">
               Mon - Fri: 9:00 AM – 7:00 PM
               <br />
               Sat - Sun: 10:00 AM – 5:00 PM
