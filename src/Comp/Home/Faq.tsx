@@ -3,30 +3,75 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
+    question: "What services does Mechanique.in offer?",
+    answer:
+      "We provide car servicing, mechanical repairs, detailing, diagnostics, oil changes, brake checks, and more—everything your car needs under one roof.",
+  },
+  {
+    question: "Do I need an appointment for service?",
+    answer:
+      "Appointments are recommended for quicker service, but we also accept walk-ins depending on availability.",
+  },
+  {
     question: "What types of vehicles do you service?",
     answer:
-      "We service all types of vehicles including hatchbacks, sedans, SUVs, and even commercial vehicles. Whether it's a regular service or a complex engine repair — we’ve got you covered.",
+      "We handle all major car brands—sedans, hatchbacks, SUVs, and even premium and luxury models.",
   },
   {
-    question: "Do I need to book an appointment?",
+    question: "How long does a regular service take?",
     answer:
-      "While walk-ins are welcome, we recommend booking an appointment to ensure faster service and guaranteed slot availability, especially during weekends or peak hours.",
+      "A standard service usually takes 2–3 hours, depending on your vehicle's condition and the services required.",
   },
   {
-    question: "Can I get a cost estimate before the repair?",
+    question: "Can I get an estimate before work starts?",
     answer:
-      "Absolutely! After a quick diagnosis, we provide a transparent estimate before any work begins. No hidden charges, just honest pricing.",
+      "Absolutely! We provide a detailed quote before starting any repair or maintenance work.",
   },
   {
-    question: "Do you use genuine spare parts?",
+    question: "Are your mechanics certified?",
     answer:
-      "Yes, we only use genuine or OEM-approved parts to ensure the best performance and durability for your vehicle.",
+      "Yes, our technicians are trained professionals with certifications and experience in handling various vehicle systems.",
   },
   {
-    question: "Is there a warranty on your repairs?",
+    question: "Do you use original spare parts?",
     answer:
-      "Yes! Most of our services come with a service warranty ranging from 15 days to 6 months depending on the type of repair.",
+      "We use 100% genuine OEM parts to ensure your vehicle performs like new after every service.",
   },
+  {
+    question: "Is there any warranty on repairs?",
+    answer:
+      "Yes, all our repairs come with a limited warranty. Specific terms depend on the service type and parts used.",
+  },
+  {
+    question: "Can I track my service status?",
+    answer:
+      "Yes, you’ll receive real-time updates via WhatsApp or SMS about your vehicle’s service progress.",
+  },
+  {
+    question: "What payment options do you accept?",
+    answer:
+      "We accept UPI, debit/credit cards, net banking, and cash.",
+  },
+  // {
+  //   question: "Do you offer emergency breakdown assistance?",
+  //   answer:
+  //     "Yes, we provide roadside assistance within city limits for emergencies like battery jumpstart, towing, or flat tires.",
+  // },
+  // {
+  //   question: "Can I reschedule or cancel my appointment?",
+  //   answer:
+  //     "Yes, appointments can be rescheduled or cancelled via our website or customer care, ideally 24 hours in advance.",
+  // },
+  // {
+  //   question: "Do you offer car pickup and drop service?",
+  //   answer:
+  //     "Yes, our free pickup and drop facility ensures a hassle-free experience for our customers.",
+  // },
+  // {
+  //   question: "How do I book a service?",
+  //   answer:
+  //     "Simply visit mechanique.in, choose your service, and confirm your booking in a few clicks.",
+  // },
 ];
 
 const FaqSection = () => {
