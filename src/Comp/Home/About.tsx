@@ -26,7 +26,7 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            About Our <span className="text-red-600">Workshop</span>
+            About Our <span className="text-red-600">Workshops</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             With over 15 years in the auto repair industry, we’ve built a reputation for reliability, professionalism,
@@ -40,7 +40,7 @@ const About = () => {
           <div className="h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-lg hover:scale-105 transform transition duration-500 ease-in-out">
             <img
               src="https://i.pinimg.com/736x/44/8e/7a/448e7ad06d1606eaaa875613c72419ac.jpg"
-              alt="Our workshop"
+              alt="Our workshops"
               className="w-full h-full object-cover rounded-lg"
             />
           </div>
@@ -49,7 +49,7 @@ const About = () => {
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-semibold text-gray-800">Driven by Passion, Backed by Skill</h3>
             <p className="text-gray-600">
-              Since 2008, our workshop has been a trusted destination for vehicle owners. Whether it’s routine
+              Since 2008, our workshops has been a trusted destination for vehicle owners. Whether it’s routine
               maintenance or a complex repair job, our team ensures your car is treated with the care it deserves.
             </p>
 
