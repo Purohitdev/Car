@@ -1,3 +1,5 @@
+
+
 import React, { useState } from "react";
 import { MapPin, Clock } from "lucide-react";
 
@@ -18,7 +20,7 @@ const Search: React.FC = () => {
                   : "bg-white text-gray-700 hover:bg-gray-200"
               } rounded-t-lg shadow-sm hover:shadow-md`}
             >
-               Book a Service
+              Book a Service
             </button>
             <button
               onClick={() => setActiveTab("return")}
@@ -36,6 +38,20 @@ const Search: React.FC = () => {
           {activeTab === "book" && (
             <div className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                {/* Service Type */}
+                <div className="space-y-2">
+                  <label className="text-sm font-medium">Select Service</label>
+                  <select className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600">
+                    <option value="">Choose a service</option>
+                    <option value="engine">Engine Repair</option>
+                    <option value="oil-change">Oil Change</option>
+                    <option value="tyre">Tyre Replacement</option>
+                    <option value="battery">Battery Check</option>
+                    <option value="general">General Maintenance</option>
+                  </select>
+                </div>
+
+                {/* Location */}
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Service Location</label>
                   <div className="flex items-center border rounded-lg p-3 shadow-md hover:shadow-lg transition duration-200">
@@ -48,6 +64,7 @@ const Search: React.FC = () => {
                   </div>
                 </div>
 
+                {/* Date */}
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Service Date</label>
                   <div className="flex items-center border rounded-lg p-3 shadow-md hover:shadow-lg transition duration-200">
@@ -59,6 +76,7 @@ const Search: React.FC = () => {
                   </div>
                 </div>
 
+                {/* Time */}
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Service Time</label>
                   <div className="flex items-center border rounded-lg p-3 shadow-md hover:shadow-lg transition duration-200">
@@ -69,12 +87,12 @@ const Search: React.FC = () => {
                     />
                   </div>
                 </div>
+              </div>
 
-                <div className="flex items-end mt-6">
-                  <button className="w-full bg-red-600 hover:bg-red-700 text-white h-12 rounded-lg font-semibold transition duration-300 transform hover:scale-105 shadow-md">
+              <div className="flex justify-end">
+                <button className="bg-red-600 hover:bg-red-700 text-white h-12 px-6 rounded-lg font-semibold transition duration-300 transform hover:scale-105 shadow-md">
                   Book a Service
-                  </button>
-                </div>
+                </button>
               </div>
             </div>
           )}
@@ -83,6 +101,7 @@ const Search: React.FC = () => {
           {activeTab === "return" && (
             <div className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Booking Reference */}
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Booking Reference</label>
                   <input
@@ -92,6 +111,7 @@ const Search: React.FC = () => {
                   />
                 </div>
 
+                {/* Return Location */}
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Service Return Location</label>
                   <div className="flex items-center border rounded-lg p-3 shadow-md hover:shadow-lg transition duration-200">
@@ -104,11 +124,24 @@ const Search: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex items-end mt-6">
-                  <button className="w-full bg-red-600 hover:bg-red-700 text-white h-12 rounded-lg font-semibold transition duration-300 transform hover:scale-105 shadow-md">
-                    Process Return
-                  </button>
+                {/* Service Type */}
+                <div className="space-y-2">
+                  <label className="text-sm font-medium">Service Type</label>
+                  <select className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600">
+                    <option value="">Select the returned service</option>
+                    <option value="engine">Engine Repair</option>
+                    <option value="oil-change">Oil Change</option>
+                    <option value="tyre">Tyre Replacement</option>
+                    <option value="battery">Battery Check</option>
+                    <option value="general">General Maintenance</option>
+                  </select>
                 </div>
+              </div>
+
+              <div className="flex justify-end">
+                <button className="bg-red-600 hover:bg-red-700 text-white h-12 px-6 rounded-lg font-semibold transition duration-300 transform hover:scale-105 shadow-md">
+                  Process Return
+                </button>
               </div>
             </div>
           )}

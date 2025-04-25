@@ -9,6 +9,7 @@ import FaqSection from './Faq'
 import Hero from './Hero'
 import LeadershipCard from './LeadershipCard'
 import Plans from './Plan'
+import PopularCarBrands from './PopularCar'
 import Search from './Serch'
 import Service from './Service'
 import TestimonialsSection from './Test'
@@ -24,6 +25,8 @@ function Home() {
             <ComingSoon />
             <Service />
             <FeaturedCarsSection />
+            {/* <PopularCarModels/> */}
+            <PopularCarBrands/>
             <Plans />
             <LeadershipCard />
             <FaqSection />
