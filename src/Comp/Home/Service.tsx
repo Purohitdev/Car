@@ -102,7 +102,7 @@ const Service = () => {
         </div>
 
         {/* Express Car Service Banner */}
-        <div className="bg-white border-l-4 border-red-500 shadow-md p-6 rounded-lg mb-12 relative">
+        {/* <div className="bg-white border-l-4 border-red-500 shadow-md p-6 rounded-lg mb-12 relative">
           <div className="absolute top-0 right-0 bg-gradient-to-r from-red-500 to-red-700 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
             Super Fast
           </div>
@@ -123,7 +123,7 @@ const Service = () => {
               Schedule Slot Now
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* Service Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
