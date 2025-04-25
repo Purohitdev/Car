@@ -18,7 +18,7 @@ const Search: React.FC = () => {
                   : "bg-white text-gray-700 hover:bg-gray-200"
               } rounded-t-lg shadow-sm hover:shadow-md`}
             >
-              Book a Mechanic
+               Book a Service
             </button>
             <button
               onClick={() => setActiveTab("return")}
@@ -72,7 +72,7 @@ const Search: React.FC = () => {
 
                 <div className="flex items-end mt-6">
                   <button className="w-full bg-red-600 hover:bg-red-700 text-white h-12 rounded-lg font-semibold transition duration-300 transform hover:scale-105 shadow-md">
-                    Book Mechanic
+                  Book a Service
                   </button>
                 </div>
               </div>

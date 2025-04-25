@@ -51,8 +51,6 @@ const services = [
     title: "Tyre Service",
     description: "Tyre Maintenance and Replacement",
   },
-
-  // NEW ITEMS BELOW
   {
     icon: <Wrench className="h-6 w-6 text-red-600" />,
     title: "24x7 Breakdown",
@@ -83,6 +81,11 @@ const services = [
     title: "RTO Services",
     description: "Registration, Transfer & Other RTO Tasks",
   },
+  {
+    icon: <ShieldCheck className="h-6 w-6 text-red-600" />,
+    title: "Car Insurance",
+    description: "Renewals, Claims & Comprehensive Coverage",
+  },
 ];
 
 
@@ -107,7 +110,7 @@ const Service = () => {
             Why Wait All Day?
           </h3>
           <p className="text-gray-800 mb-1">
-            Get Premium Car Service in 90 Minutes for 20% Less
+            Get Premium Car Service for 20% Less
           </p>
           <p className="text-orange-500 text-sm italic mb-4">
             Fast, Affordable, Done Right!

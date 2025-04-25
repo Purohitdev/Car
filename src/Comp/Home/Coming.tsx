@@ -1,7 +1,7 @@
 const ComingSoon = () => {
     return (
       <section className=" py-20 px-6 text-center">
-        <h2 className="text-6xl font-bold text-gray-900 mb-4">Dropping Soon!</h2>
+        <h2 className="text-6xl font-bold text-gray-900 mb-4">Launching Soon!</h2>
         <p className="text-gray-600 text-lg mb-8">
           Get ready for the <span className="text-red-600 font-medium">Mechanique</span> Mobile App
         </p>

@@ -85,9 +85,8 @@ const ContactSection = () => (
             Need help with a car issue, want to schedule a service, or just have a question? Reach out to our expert team at Mechanique.
           </p>
           <div className="space-y-6">
-            <ContactDetail icon={<MapPin className="h-5 w-5 text-red-600" />} title="Our Corporate Office">
-            1st floor, Daksh residency, Opposite coaching hub, near pannadhay circle, sector 16, Pratap Nagar, jaipur
-            </ContactDetail>
+            <ContactDetail icon={<MapPin className="h-5 w-5 text-red-600" />} title="Our hatega">
+            First Floor, Daksh Residency, Opposite Coaching Hub, Haldighati Marg, Pratap Nagar, Jaipur - India - 302033            </ContactDetail>
             <ContactDetail icon={<Phone className="h-5 w-5 text-red-600" />} title="Call Us">
              +91 8432312345
             </ContactDetail>
