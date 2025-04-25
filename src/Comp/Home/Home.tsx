@@ -6,6 +6,7 @@ import FeaturedCarsSection from './Car'
 import ComingSoon from './Coming'
 import ContactSection from './Contact'
 import FaqSection from './Faq'
+import FranchiseSection from './Frach'
 import Hero from './Hero'
 import LeadershipCard from './LeadershipCard'
 import Plans from './Plan'
@@ -32,6 +33,8 @@ function Home() {
             <FaqSection />
 
             <TestimonialsSection />
+            <FranchiseSection/>
+
             <ContactSection />
             <Footer />
             <a
