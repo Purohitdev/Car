@@ -41,9 +41,16 @@ export default function FranchiseSection() {
         </div>
 
         <div className="mt-10">
-          <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition">
-            Apply for Franchise
-          </button>
+        <a 
+  href={`https://wa.me/8432312345?text=Hello Sir I am interested in starting a franchise with Mechanique. Kindly guide me through the process`} 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition">
+    Apply for Franchise
+  </button>
+</a>
+
         </div>
       </div>
     </section>
