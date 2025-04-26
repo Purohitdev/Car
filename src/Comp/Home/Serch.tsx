@@ -63,7 +63,7 @@ const Search: React.FC = () => {
 
                 {/* Location */}
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Service Location</label>
+                  <label className="text-sm font-medium">your Location</label>
                   <div className="flex items-center border rounded-lg p-3 shadow-md hover:shadow-lg transition duration-200">
                     <MapPin className="h-5 w-5 text-gray-500 mr-3" />
                     <input
@@ -130,7 +130,7 @@ const Search: React.FC = () => {
           {/* Return Form */}
           {activeTab === "return" && (
             <div className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Booking Reference */}
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Booking Reference</label>
@@ -155,7 +155,7 @@ const Search: React.FC = () => {
                 </div>
 
                 {/* Service Type */}
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <label className="text-sm font-medium">Service Type</label>
                   <select className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600">
                     <option value="">Select the returned service</option>
@@ -165,7 +165,7 @@ const Search: React.FC = () => {
                     <option value="battery">Battery Check</option>
                     <option value="general">General Maintenance</option>
                   </select>
-                </div>
+                </div> */}
               </div>
 
               <div className="flex justify-end">
