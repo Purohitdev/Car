@@ -66,9 +66,9 @@ const About = () => {
             </div>
 
             {/* CTA */}
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105 shadow-md">
+            {/* <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300 transform hover:scale-105 shadow-md">
               Learn More About Us
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
