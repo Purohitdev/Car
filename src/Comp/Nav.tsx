@@ -39,14 +39,7 @@ const Nav: React.FC = () => {
           </nav>
 
           {/* CTA buttons */}
-          <div className="flex items-center gap-4">
-            <button className="hidden md:flex px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 transition-colors">
-              Sign In
-            </button>
-            <button className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded-md transition-colors">
-              Register
-            </button>
-          </div>
+       
         </div>
       </div>
     </header>

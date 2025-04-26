@@ -42,13 +42,24 @@ const Search: React.FC = () => {
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Select Service</label>
                   <select className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600">
-                    <option value="">Choose a service</option>
-                    <option value="engine">Engine Repair</option>
-                    <option value="oil-change">Oil Change</option>
-                    <option value="tyre">Tyre Replacement</option>
-                    <option value="battery">Battery Check</option>
-                    <option value="general">General Maintenance</option>
-                  </select>
+  <option value="">Choose a service</option>
+  <option value="periodic-service">Periodic Service</option>
+  <option value="ac-service">AC Service</option>
+  <option value="car-spa-cleaning">Car Spa & Cleaning</option>
+  <option value="denting-painting">Denting & Painting</option>
+  <option value="battery-service">Battery Service</option>
+  <option value="windshield-service">Windshield Service</option>
+  <option value="car-detailing">Car Detailing</option>
+  <option value="tyre-service">Tyre Service</option>
+  <option value="24x7-breakdown">24x7 Breakdown</option>
+  <option value="pdi">PDI</option>
+  <option value="car-accessories">Car Accessories</option>
+  <option value="car-finance-loans">Car Finance & Loans</option>
+  <option value="car-sales">Car Sales</option>
+  <option value="rto-services">RTO Services</option>
+  <option value="car-insurance">Car Insurance</option>
+</select>
+
                 </div>
 
                 {/* Location */}

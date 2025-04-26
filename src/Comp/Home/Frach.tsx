@@ -6,7 +6,8 @@ export default function FranchiseSection() {
       <div className="bg-gray-50 rounded-3xl shadow-xl p-10 md:p-16 text-center space-y-12">
         <div className="space-y-4">
           <h2 className="text-4xl font-extrabold">
-            Start Your Own <span className="text-red-500">Mechanique</span> Franchise
+          Get Your Own <span className="text-red-500">Mechanique</span> workshop
+          
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Join one of India's fastest growing automobile service brands and build your own success story.
