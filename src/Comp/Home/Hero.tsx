@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
                 Book Service
               </button>
               <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-medium px-6 h-12 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Explore Services
+               <a href="#services"> Explore Services</a>
               </button>
             </div>
           </div>

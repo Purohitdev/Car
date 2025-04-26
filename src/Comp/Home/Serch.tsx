@@ -42,24 +42,23 @@ const Search: React.FC = () => {
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Select Service</label>
                   <select className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600">
-  <option value="">Choose a service</option>
-  <option value="periodic-service">Periodic Service</option>
-  <option value="ac-service">AC Service</option>
-  <option value="car-spa-cleaning">Car Spa & Cleaning</option>
-  <option value="denting-painting">Denting & Painting</option>
-  <option value="battery-service">Battery Service</option>
-  <option value="windshield-service">Windshield Service</option>
-  <option value="car-detailing">Car Detailing</option>
-  <option value="tyre-service">Tyre Service</option>
-  <option value="24x7-breakdown">24x7 Breakdown</option>
-  <option value="pdi">PDI</option>
-  <option value="car-accessories">Car Accessories</option>
-  <option value="car-finance-loans">Car Finance & Loans</option>
-  <option value="car-sales">Car Sales</option>
-  <option value="rto-services">RTO Services</option>
-  <option value="car-insurance">Car Insurance</option>
-</select>
-
+                    <option value="">Choose a service</option>
+                    <option value="periodic-service">Periodic Service</option>
+                    <option value="ac-service">AC Service</option>
+                    <option value="car-spa-cleaning">Car Spa & Cleaning</option>
+                    <option value="denting-painting">Denting & Painting</option>
+                    <option value="battery-service">Battery Service</option>
+                    <option value="windshield-service">Windshield Service</option>
+                    <option value="car-detailing">Car Detailing</option>
+                    <option value="tyre-service">Tyre Service</option>
+                    <option value="24x7-breakdown">24x7 Breakdown</option>
+                    <option value="pdi">PDI</option>
+                    <option value="car-accessories">Car Accessories</option>
+                    <option value="car-finance-loans">Car Finance & Loans</option>
+                    <option value="car-sales">Car Sales</option>
+                    <option value="rto-services">RTO Services</option>
+                    <option value="car-insurance">Car Insurance</option>
+                  </select>
                 </div>
 
                 {/* Location */}
@@ -87,16 +86,24 @@ const Search: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Time */}
+                {/* Car Brand/Model */}
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Service Time</label>
-                  <div className="flex items-center border rounded-lg p-3 shadow-md hover:shadow-lg transition duration-200">
-                    <Clock className="h-5 w-5 text-gray-500 mr-3" />
-                    <input
-                      type="time"
-                      className="w-full outline-none bg-transparent focus:ring-2 focus:ring-red-600"
-                    />
-                  </div>
+                  <label className="text-sm font-medium">Car Brand / Model</label>
+                  <input
+                    type="text"
+                    placeholder="Eg: Hyundai i20, Maruti Swift"
+                    className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600"
+                  />
+                </div>
+
+                {/* Phone Number */}
+                <div className="space-y-2 md:col-span-2">
+                  <label className="text-sm font-medium">Phone Number</label>
+                  <input
+                    type="tel"
+                    placeholder="Enter your phone number"
+                    className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600"
+                  />
                 </div>
               </div>
 
