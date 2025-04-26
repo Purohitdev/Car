@@ -89,11 +89,7 @@ const FeaturedCarsSection = () => {
         </div>
 
         {/* View All Button */}
-        <div className="text-center mt-10">
-          <button className="border border-red-600 text-red-600 px-6 py-2 rounded hover:bg-red-600 hover:text-white transition">
-            View All Cars
-          </button>
-        </div>
+      
       </div>
     </section>
   );

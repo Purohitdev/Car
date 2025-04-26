@@ -87,14 +87,26 @@ const Search: React.FC = () => {
                 </div>
 
                 {/* Car Brand/Model */}
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Car Brand / Model</label>
-                  <input
-                    type="text"
-                    placeholder="Eg: Hyundai i20, Maruti Swift"
-                    className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600"
-                  />
-                </div>
+              {/* Car Brand */}
+<div className="space-y-2">
+  <label className="text-sm font-medium">Car Brand</label>
+  <input
+    type="text"
+    placeholder="Eg: Hyundai, Maruti"
+    className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600"
+  />
+</div>
+
+{/* Car Model */}
+<div className="space-y-2">
+  <label className="text-sm font-medium">Car Model</label>
+  <input
+    type="text"
+    placeholder="Eg: i20, Swift"
+    className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600"
+  />
+</div>
+
 
                 {/* Phone Number */}
                 <div className="space-y-2 md:col-span-2">

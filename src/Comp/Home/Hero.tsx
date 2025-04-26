@@ -48,9 +48,7 @@ const Hero: React.FC = () => {
               We keep your car running like new. From oil changes to engine repair — fast, affordable, and reliable.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-red-600 hover:bg-red-700 text-white font-medium px-6 h-12 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Book Service
-              </button>
+      
               <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-medium px-6 h-12 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
                <a href="#services"> Explore Services</a>
               </button>

@@ -56,6 +56,15 @@ const AdvantageSection = () => {
                 <p className="text-gray-600 text-sm">Enjoy pickup and drop services for ultimate convenience</p>
               </div>
             </li>
+            <li className="flex items-start gap-3">
+            <div className="text-red-600 text-xl">🚗</div>
+            <div>
+              <p className="font-semibold text-gray-800">Free Car Pickup & Drop Service</p>
+              <p className="text-gray-600 text-sm">
+                We provide free car pickup and drop for your service appointments.
+              </p>
+            </div>
+          </li>
           </ul>
         </div>
       </section>
