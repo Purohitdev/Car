@@ -1,33 +1,22 @@
 // components/FeaturedCarsSection.tsx
-import { Car, Users, Star } from "lucide-react";
-
-const featuredCars = [
+const featuredVideos = [
   {
     id: 1,
-    name: "SUV Premium",
-    rating: 4.8,
-    seats: 5,
-    transmission: "Automatic",
-    price: 89,
-    image: `https://i.pinimg.com/736x/c3/11/81/c31181b512254a69932040217c9c7969.jpg`,
+    title: "Introduction - Mechanique",
+    subtitle: "Learn about who we are and what we offer.",
+    videoUrl: "https://videos.pexels.com/video-files/3066463/3066463-uhd_2732_1440_24fps.mp4", // Placeholder video
   },
   {
     id: 2,
-    name: "Luxury Sedan",
-    rating: 4.7,
-    seats: 5,
-    transmission: "Automatic",
-    price: 99,
-    image: `https://i.pinimg.com/736x/13/5e/7f/135e7fd0b90481f19e39547d82763956.jpg`,
+    title: "How to book a service on Mechanique",
+    subtitle: "Step-by-step guide to book your first service easily.",
+    videoUrl: "/v1.mp4", // Placeholder video
   },
   {
     id: 3,
-    name: "Economy Hatchback",
-    rating: 4.5,
-    seats: 4,
-    transmission: "Manual",
-    price: 59,
-    image: `https://i.pinimg.com/736x/09/e2/05/09e205bde731e0106606a0aef9e8a4fb.jpg`,
+    title: "How to apply for Mechanique Franchise",
+    subtitle: "Become a part of our growing network by applying today.",
+    videoUrl: "/v2.mp4", // Placeholder video
   },
 ];
 
@@ -38,58 +27,37 @@ const FeaturedCarsSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Featured <span className="text-red-600">Cars</span>
+            Featured <span className="text-red-600">Videos</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore our most popular rental vehicles, perfect for any occasion or travel need.
+            Learn more about Mechanique through these quick video guides.
           </p>
         </div>
 
-        {/* Cards */}
+        {/* Videos */}
         <div className="grid md:grid-cols-3 gap-8">
-          {featuredCars.map((car) => (
+          {featuredVideos.map((video) => (
             <div
-              key={car.id}
+              key={video.id}
               className="overflow-hidden rounded-lg bg-white border border-gray-200 shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="relative h-48">
-                <img
-                  src={car.image}
-                  alt={car.name}
+              <div className="relative h-48 bg-black">
+                <video
+                  src={video.videoUrl}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <div className="flex justify-between items-center mb-3">
-                  <h3 className="text-xl font-bold">{car.name}</h3>
-                  <div className="flex items-center gap-1">
-                    <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
-                    <span className="text-sm font-medium">{car.rating}</span>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 text-gray-600 mb-4 text-sm">
-                  <Users className="h-4 w-4" />
-                  <span>{car.seats} Seats</span>
-                  <span className="mx-2">•</span>
-                  <Car className="h-4 w-4" />
-                  <span>{car.transmission}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <div>
-                    <span className="text-2xl font-bold text-red-600">${car.price}</span>
-                    <span className="text-gray-600">/day</span>
-                  </div>
-                  <button className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition">
-                    Rent Now
-                  </button>
-                </div>
+                <h3 className="text-xl font-bold text-red-600 mb-2">{video.title}</h3>
+                <p className="text-gray-600 text-sm">{video.subtitle}</p>
               </div>
             </div>
           ))}
         </div>
-
-        {/* View All Button */}
-      
       </div>
     </section>
   );

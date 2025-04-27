@@ -44,7 +44,7 @@ const popularBrands = [
     },
     {
       name: "Audi",
-      image: "https://img.favpng.com/10/18/6/audi-a3-car-emblem-logo-png-favpng-8jv3VHvLKxLWr8yrywsWjF92Z.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjw0CAfUd641iIV4YOdtLXAs1kBtbNzxy1g&s",
     },
     {
       name: "Lexus",
@@ -60,7 +60,7 @@ const popularBrands = [
     },
     {
       name: "Aston Martin",
-      image: "https://fabrikbrands.com/wp-content/uploads/Aston-Martin-Logo-1-scaled.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPE9bKrE_cqkX3ltDw3_0VCTlh6Jhlo2JfA&s",
     },
     {
       name: "Jaguar",
@@ -88,7 +88,7 @@ const popularBrands = [
     },
     {
       name: "BYD",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgxq-WhI0k5i9vbkcgJYfNMPuxb0FEVcn3rA&s",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu8OCqjYKSTGaDvhGIDMCLmc-9KFab-de5dw&s",
     },
   ]
 
