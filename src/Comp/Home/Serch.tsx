@@ -1,8 +1,34 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { MapPin, Clock } from "lucide-react";
+import emailjs from "emailjs-com";
 
 const Search: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"book">("book");
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!formRef.current) return;
+
+    emailjs.sendForm(
+      "service_45ojwmu",     // <-- replace with your EmailJS service ID
+      "template_k5acskd", 
+         // <-- replace with your EmailJS template ID
+      formRef.current,
+      "4I-m1sMQfVIm6XNCu"      // <-- replace with your EmailJS public key
+    ).then(
+      (result) => {
+        console.log("SUCCESS!", result.text);
+        alert("Service booked successfully! ✅");
+        formRef.current?.reset();
+      },
+      (error) => {
+        console.error("FAILED...", error.text);
+        alert("Failed to book service ❌");
+      }
+    );
+  };
 
   return (
     <section className="bg-gray-100 py-12">
@@ -20,12 +46,16 @@ const Search: React.FC = () => {
 
           {/* Book Form */}
           {activeTab === "book" && (
-            <div className="space-y-6">
+            <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 {/* Service Type */}
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Select Service</label>
-                  <select className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600">
+                  <select
+                    name="service"
+                    className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600"
+                    required
+                  >
                     <option value="">Choose a service</option>
                     <option value="periodic-service">Periodic Service</option>
                     <option value="ac-service">AC Service</option>
@@ -51,9 +81,11 @@ const Search: React.FC = () => {
                   <div className="flex items-center border rounded-lg p-3 shadow-md hover:shadow-lg transition duration-200">
                     <MapPin className="h-5 w-5 text-gray-500 mr-3" />
                     <input
+                      name="location"
                       type="text"
                       placeholder="City, Address, etc."
                       className="w-full outline-none bg-transparent focus:ring-2 focus:ring-red-600"
+                      required
                     />
                   </div>
                 </div>
@@ -64,8 +96,10 @@ const Search: React.FC = () => {
                   <div className="flex items-center border rounded-lg p-3 shadow-md hover:shadow-lg transition duration-200">
                     <Clock className="h-5 w-5 text-gray-500 mr-3" />
                     <input
+                      name="service_date"
                       type="date"
                       className="w-full outline-none bg-transparent focus:ring-2 focus:ring-red-600"
+                      required
                     />
                   </div>
                 </div>
@@ -74,9 +108,11 @@ const Search: React.FC = () => {
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Car Brand</label>
                   <input
+                    name="car_brand"
                     type="text"
                     placeholder="Eg: Hyundai, Maruti"
                     className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600"
+                    required
                   />
                 </div>
 
@@ -84,9 +120,11 @@ const Search: React.FC = () => {
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Car Model</label>
                   <input
+                    name="car_model"
                     type="text"
                     placeholder="Eg: i20, Swift"
                     className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600"
+                    required
                   />
                 </div>
 
@@ -94,19 +132,24 @@ const Search: React.FC = () => {
                 <div className="space-y-2 md:col-span-2">
                   <label className="text-sm font-medium">Phone Number</label>
                   <input
+                    name="phone"
                     type="tel"
                     placeholder="Enter your phone number"
                     className="w-full border rounded-lg p-3 outline-none shadow-md hover:shadow-lg focus:ring-2 focus:ring-red-600"
+                    required
                   />
                 </div>
               </div>
 
               <div className="flex justify-end">
-                <button className="bg-red-600 hover:bg-red-700 text-white h-12 px-6 rounded-lg font-semibold transition duration-300 transform hover:scale-105 shadow-md">
+                <button
+                  type="submit"
+                  className="bg-red-600 hover:bg-red-700 text-white h-12 px-6 rounded-lg font-semibold transition duration-300 transform hover:scale-105 shadow-md"
+                >
                   Book a Service
                 </button>
               </div>
-            </div>
+            </form>
           )}
         </div>
       </div>
