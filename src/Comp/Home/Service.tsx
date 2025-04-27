@@ -1,11 +1,9 @@
-// components/Service.tsx
 import {
   Wrench,
   Snowflake,
   ShowerHead,
   Paintbrush,
   BatteryCharging,
-  ShieldCheck,
   Sparkles,
   CircleDashed,
 } from "lucide-react";
@@ -37,7 +35,7 @@ const services = [
     description: "Battery Check, Repair and Replacement",
   },
   {
-    icon: <ShieldCheck className="h-6 w-6 text-red-600" />,
+    image: "/wind.jpg", // ✅ Windshield uses image
     title: "Windshield Service",
     description: "Windshield Repair and Replacement",
   },
@@ -57,8 +55,8 @@ const services = [
     description: "Breakdown Support & Crane Booking Anytime",
   },
   {
-    icon: <ShieldCheck className="h-6 w-6 text-red-600" />,
-    title: "PDI ",
+    image: "/pdi.jpg", // ✅ PDI uses image
+    title: "PDI",
     description: "Pre-delivery Inspection for Used & New Cars",
   },
   {
@@ -77,17 +75,16 @@ const services = [
     description: "Buy, Sell or Exchange Cars Easily",
   },
   {
-    icon: <ShieldCheck className="h-6 w-6 text-red-600" />,
+    icon: <Wrench className="h-6 w-6 text-red-600" />,
     title: "RTO Services",
     description: "Registration, Transfer & Other RTO Tasks",
   },
   {
-    icon: <ShieldCheck className="h-6 w-6 text-red-600" />,
+    image: "/insure.jpg", // ✅ Insurance uses image
     title: "Car Insurance",
     description: "Renewals, Claims & Comprehensive Coverage",
   },
 ];
-
 
 const Service = () => {
   return (
@@ -101,30 +98,6 @@ const Service = () => {
           <p className="text-gray-600">Aapki Gaadi, Hamari Zimmedari</p>
         </div>
 
-        {/* Express Car Service Banner */}
-        {/* <div className="bg-white border-l-4 border-red-500 shadow-md p-6 rounded-lg mb-12 relative">
-          <div className="absolute top-0 right-0 bg-gradient-to-r from-red-500 to-red-700 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-            Super Fast
-          </div>
-          <h3 className="text-xl font-semibold text-red-600 mb-2">
-            Why Wait All Day?
-          </h3>
-          <p className="text-gray-800 mb-1">
-            Get Premium Car Service for 20% Less
-          </p>
-          <p className="text-orange-500 text-sm italic mb-4">
-            Fast, Affordable, Done Right!
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <button className="bg-red-100 text-red-600 px-4 py-2 rounded-full text-sm font-medium">
-              🚗 90-Minute Service
-            </button>
-            <button className="bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-red-700 transition">
-              Schedule Slot Now
-            </button>
-          </div>
-        </div> */}
-
         {/* Service Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {services.map((service, index) => (
@@ -132,8 +105,16 @@ const Service = () => {
               key={index}
               className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6 text-center"
             >
-              <div className="h-12 w-12 mx-auto bg-red-100 rounded-full flex items-center justify-center mb-4">
-                {service.icon}
+              <div className="h-12 w-12 mx-auto bg-red-100 rounded-full flex items-center justify-center mb-4 overflow-hidden">
+                {service.icon ? (
+                  service.icon
+                ) : (
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="h-12 w-12 object-contain"
+                  />
+                )}
               </div>
               <h4 className="text-lg font-semibold text-gray-800 mb-2">
                 {service.title}

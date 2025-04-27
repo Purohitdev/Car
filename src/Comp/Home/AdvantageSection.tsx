@@ -5,15 +5,11 @@ const AdvantageSection = () => {
         <div className="relative w-full max-w-sm">
           <div className="bg-white rounded-3xl shadow-2xl p-4">
             <img
-              src="https://i.ibb.co/k1H7j7b/App-Frame.jpg" // 👈 Replace with your actual phone image
+              src="/phone.JPG" // 👈 Replace with your actual phone image
               alt="App Mockup"
               className="rounded-2xl"
             />
-            <div className="text-center mt-6">
-              <button className="bg-red-600 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-red-700 transition duration-300">
-                BOOK NOW
-              </button>
-            </div>
+           
           </div>
         </div>
   

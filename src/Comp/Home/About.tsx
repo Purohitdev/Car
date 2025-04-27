@@ -39,7 +39,7 @@ const About = () => {
           {/* Image */}
           <div className="h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-lg hover:scale-105 transform transition duration-500 ease-in-out">
             <img
-              src="https://i.pinimg.com/736x/44/8e/7a/448e7ad06d1606eaaa875613c72419ac.jpg"
+              src="/about.png"
               alt="Our workshops"
               className="w-full h-full object-cover rounded-lg"
             />
