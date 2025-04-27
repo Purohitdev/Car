@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const backgroundImages = [
-  "https://i.pinimg.com/736x/1c/ba/38/1cba385973e8c92e544865751b5c5bb3.jpg",
+  "/image.png",
   "https://i.pinimg.com/736x/1e/79/7a/1e797a2c1cdada662a4f3845e5921247.jpg",
   "https://i.pinimg.com/736x/1b/92/0c/1b920c99364e9e44a124d6cf8cb94212.jpg",
 ];

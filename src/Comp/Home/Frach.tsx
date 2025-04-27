@@ -35,7 +35,7 @@ export default function FranchiseSection() {
             <Wallet className="h-10 w-10 text-red-500 mb-4" />
             <h3 className="text-2xl font-semibold mb-2">Investment</h3>
             <p className="text-gray-600">
-              Own your Mechanique workshop for just <span className="font-bold text-black">₹9 Lakhs</span>.
+            Get your own Mechanique workshop for just <span className="font-bold text-black">₹9 Lakhs</span>.
             </p>
           </div>
         </div>
