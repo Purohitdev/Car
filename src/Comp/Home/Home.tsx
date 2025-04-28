@@ -9,6 +9,7 @@ import FaqSection from './Faq'
 import FranchiseSection from './Frach'
 import Hero from './Hero'
 import LeadershipCard from './LeadershipCard'
+import Modelsec from './model'
 import Plans from './Plan'
 import PopularBrands from './PopularBrands'
 import PopularCarBrands from './PopularCar'
@@ -38,6 +39,7 @@ function Home() {
 
             <TestimonialsSection />
             <FranchiseSection/>
+            <Modelsec/>
 
             <ContactSection />
             <Footer />
