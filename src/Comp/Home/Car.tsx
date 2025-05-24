@@ -64,7 +64,6 @@ const FeaturedCarsSection = () => {
                     if (el) videoRefs.current[index] = el;
                   }}
                   src={video.videoUrl}
-                  muted
                   loop
                   playsInline
                   className="w-full h-full object-cover"
