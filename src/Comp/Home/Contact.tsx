@@ -88,7 +88,7 @@ const ContactSection = () => (
             <ContactDetail icon={<MapPin className="h-5 w-5 text-red-600" />} title="Corporate Office">
             First Floor, Daksh Residency, Opposite Coaching Hub, Haldighati Marg, Pratap Nagar, Jaipur - India - 302033            </ContactDetail>
             <ContactDetail icon={<Phone className="h-5 w-5 text-red-600" />} title="Call Us">
-             +91 8432312345
+             +91 90571 95393 
             </ContactDetail>
             <ContactDetail icon={<Clock className="h-5 w-5 text-red-600" />} title="Workshops Hours">
               Mon - Fri: 9:00 AM – 7:00 PM

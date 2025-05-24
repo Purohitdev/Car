@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                   hellomechanique@gmail.com 
                 </a>
               </div>
-              <div> Phone: 8432312345              </div>
+              <div> Phone: +91 90571 95393              </div>
               <div>Jaipur, india</div>
             </address>
           </div>
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
             <h3 className="text-base font-semibold mb-4">Follow Us</h3>
             <div className="flex gap-4">
               <a
-                href="https://wa.me/+918432312345"
+                href="https://wa.me/+919057195393"
                 aria-label="WhatsApp"
                 target="_blank"
                 rel="noopener noreferrer"

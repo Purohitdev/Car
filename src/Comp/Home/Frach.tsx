@@ -42,7 +42,7 @@ export default function FranchiseSection() {
 
         <div className="mt-10">
         <a 
-  href={`https://wa.me/8432312345?text=Hello Sir I am interested in starting a franchise with Mechanique. Kindly guide me through the process`} 
+  href={`https://wa.me/9057195393?text=Hello Sir I am interested in starting a franchise with Mechanique. Kindly guide me through the process`} 
   target="_blank" 
   rel="noopener noreferrer"
 >
