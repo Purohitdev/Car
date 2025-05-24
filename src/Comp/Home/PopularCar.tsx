@@ -58,7 +58,7 @@ const popularCars = [
   },
   {
     name: "Toyota Fortuner",
-    image: "https://static.toiimg.com/thumb/msid-109498773,width-1280,height-720,imgsize-621764,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+    image: "https://www.financialexpress.com/wp-content/uploads/2024/10/toyota-fortuner-leader-edition_20241001131301.jpg",
   },
   {
     name: "Maruti Suzuki Wagon R",
